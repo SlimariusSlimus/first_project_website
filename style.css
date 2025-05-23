@@ -1,0 +1,46 @@
+body{
+    background-color:#191a1b;
+    color: #f5f4ef;
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+}
+header {
+  display: flex;         
+  justify-content: center;
+  align-items: center;   
+  height: 100px;         
+  text-align: center;    
+}
+header a,header a:visited{
+    border: 0 solid black;
+    display: inline-block; 
+    margin: 10px;
+    font-size: 24px;
+    color: #f5f4ef;
+    opacity: 0.65;
+    text-decoration: none;
+}
+header a:hover{
+    transition: border-width 0.4s;
+    transition: transform 0.4s;
+    transform: scale(1.15);
+    opacity: 1;
+}
+.profile h2{
+    display: flex;
+    justify-content: center;
+}
+.profile-picture-wrapper{
+    width: 500px;
+    height: 500px;
+    border: 0px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+.profile-picture{
+    width: 750px; 
+    height: auto;
+    position: absolute;
+    top: -10px; 
+    left: -70px; 
+}
