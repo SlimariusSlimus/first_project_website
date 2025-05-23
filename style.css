@@ -6,34 +6,32 @@ body {
     padding-left: 5%;
     padding-right: 5%;
 }
+div, section, p {
+    margin: 0%;
+}
 a {
     font-weight: bold;
     text-decoration: none;
     color: #878681;
 }
-.flex-div {
-    display: flex;         
-    justify-content: center;
-    align-items: center;  
+.color-secondary {
+    background-color:#e6e5e4;
+    color: #191a1b;
 }
 .mockup-hr {
   height: 2px;                   
   background-color: rgb(255, 255, 255);      
   border-radius: 5px;            
-  width: 80%;                      
+  width: 80%;     
+  margin-left: auto;
+  margin-right: auto;               
 }
 
 /* == Text/Headlines == */
 html {font-size: 16px;} 
-h1 {
-    font-size: 3rem;
-    margin: 2rem; 
-}  
-h2 {
-    font-size: 1.5rem;
-    padding: 0.5rem;
-}
-p  { 
+h1 {font-size: 3rem;}  
+h2 {font-size: 1.5rem;}
+p  {
     font-size: 1rem; 
     margin-bottom: 0.5rem;
 } 
@@ -42,14 +40,18 @@ p  {
 .right {text-align: right;}
 
 /* == Spacing == */
-.padding-left{padding-left: 2.5%;}
-.padding-right{padding-right: 2.5%;}
-.padding-top{padding-right: 2.5%;}
-.padding-bottom{padding-right: 2.5%;}
-.margin-left{margin-left: 1rem;}
-.margin-right{margin-right: 1rem;}
-.margin-top{margin-top: 1rem;}
-.margin-bottom{margin-bottom: 1rem;}
+.padding-left {padding-left: 2.5%;}
+.padding-right {padding-right: 2.5%;}
+.padding-top {padding-right: 2.5%;}
+.padding-bottom {padding-right: 2.5%;}
+.margin-left {margin-left: 2.5%;}
+.margin-right {margin-right: 2.5%;}
+.margin-top {margin-top: 2.5%;}
+.margin-bottom {margin-bottom: 2.5%;}
+.spacer {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
 
 /* == Header == */
 header {
@@ -87,21 +89,21 @@ footer {
   flex-wrap: wrap; 
   flex-direction: row;     
   justify-content: center;
+  gap: 5%;
 }
 .container-column{
   display: flex;         
   flex-wrap: wrap; 
   flex-direction: column;     
   justify-content: center;
+  gap: 5%;
 }
 .container-profile{
   display: flex;         
   flex-wrap: wrap; 
   flex-direction: row;     
   justify-content: center;
-  gap: 80px;
-  margin-top: 80px;
-  margin-bottom:80px;
+  gap: 5%;
 }
 .sub-container{
   max-width: 600px;
@@ -137,7 +139,7 @@ footer {
     * {
         border: 1px solid rgb(225, 105, 255);
     }
-     */   
+      
     div {
         border: 1px solid rgb(66, 255, 129);
     }
