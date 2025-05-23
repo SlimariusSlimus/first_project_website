@@ -1,8 +1,11 @@
+/* == Misc == */
 body{
     background-color:#191a1b;
     color: #f5f4ef;
     font-family: 'Roboto', 'Segoe UI', sans-serif;
 }
+
+/* == Header == */
 header {
   display: flex;         
   justify-content: center;
@@ -25,6 +28,21 @@ header a:hover{
     transform: scale(1.15);
     opacity: 1;
 }
+
+/* == Container == */
+.container-profile-row{
+  display: flex;          
+  flex-direction: row;     
+  justify-content: flex-start; 
+  gap: 40px;
+}
+.sub-container{
+  max-width: 600px;
+  word-wrap: break-word; /* Zeilenumbruch bei langen Wörtern */
+  overflow-wrap: break-word; /* Fallback für andere Browser */
+}
+
+/* == Profile == */
 .profile h2{
     display: flex;
     justify-content: center;
@@ -44,3 +62,9 @@ header a:hover{
     top: -10px; 
     left: -70px; 
 }
+
+/* == Debugging == */
+
+    * {
+        border: 1px solid white;
+    }
