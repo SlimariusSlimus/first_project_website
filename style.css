@@ -33,13 +33,13 @@ header a:hover{
 .container-profile-row{
   display: flex;          
   flex-direction: row;     
-  justify-content: flex-start; 
+  justify-content: center;
   gap: 40px;
 }
 .sub-container{
   max-width: 600px;
-  word-wrap: break-word; /* Zeilenumbruch bei langen Wörtern */
-  overflow-wrap: break-word; /* Fallback für andere Browser */
+  word-wrap: break-word; /* break for long words */
+  overflow-wrap: break-word; /* fallback for other browsers */
 }
 
 /* == Profile == */
