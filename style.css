@@ -1,16 +1,16 @@
+/* ========== */
 /* == Misc == */
+/* ========== */
 body {
     background-color:#191a1b;
     color: #f5f4ef;
     font-family: 'Roboto', 'Segoe UI', sans-serif;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 15vw;
+    padding-right: 15vw;
 }
-
 div, section, p {
     margin: 0%;
 }
-
 a {
     font-weight: bold;
     text-decoration: none;
@@ -19,12 +19,6 @@ a {
 a:hover {
     cursor: pointer;
 }
-
-.color-secondary {
-    background-color:#e6e5e4;
-    color: #191a1b;
-}
-
 .mockup-hr {
   height: 2px;                   
   background-color: rgb(255, 255, 255);      
@@ -33,16 +27,17 @@ a:hover {
   margin-left: auto;
   margin-right: auto;               
 }
-
 .box {
     width: 55%;
 }
-
 .flexbox {
     display: flex;
     justify-content: center;
 }
+
+/* ==================== */
 /* == Text/Headlines == */
+/* ==================== */
 html {font-size: 16px;} 
 h1 {font-size: 3rem;}  
 h2 {font-size: 1.5rem;}
@@ -54,21 +49,29 @@ p  {
 .center { text-align: center;}
 .right {text-align: right;}
 
+/* ============= */
 /* == Spacing == */
-.padding-left {padding-left: 2.5%;}
-.padding-right {padding-right: 2.5%;}
-.padding-top {padding-right: 2.5%;}
-.padding-bottom {padding-right: 2.5%;}
-.margin-left {margin-left: 2.5%;}
-.margin-right {margin-right: 2.5%;}
-.margin-top {margin-top: 2.5%;}
-.margin-bottom {margin-bottom: 2.5%;}
-.spacer {
-    margin-top: 5%;
-    margin-bottom: 5%;
+/* ============= */
+.spacer-small-vertical {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+.spacer-big-vertical {
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+}
+.spacer-small-horizontal {
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+}
+.spacer-big-horizontal {
+    margin-top: 20vw;
+    margin-bottom: 20vw;
 }
 
+/* ============ */
 /* == Header == */
+/* ============ */
 header {
     display: flex;         
     justify-content: center;
@@ -90,7 +93,9 @@ header a:hover {
     opacity: 1;
 }
 
+/* ============ */
 /* == Footer == */
+/* ============ */
 footer {
     display: flex;         
     flex-wrap: wrap; 
@@ -98,7 +103,9 @@ footer {
     justify-content: center;
 }
 
+/* =============== */
 /* == Container == */
+/* =============== */
 .container-row{
   display: flex;         
   flex-wrap: wrap; 
@@ -117,8 +124,7 @@ footer {
   display: flex;         
   flex-wrap: wrap; 
   flex-direction: row;     
-  justify-content: center;
-  gap: 5%;
+  justify-content: space-evenly;
 }
 .sub-container{
   max-width: 600px;
@@ -128,7 +134,9 @@ footer {
   overflow-wrap: break-word;    /* fallback for other browsers */
 }
 
+/* ============= */
 /* == Profile == */
+/* ============= */
 .profile h2 {
     display: flex;
     justify-content: center;
@@ -149,7 +157,9 @@ footer {
     left: -70px; 
 }
 
+/* ================ */
 /* == Animations == */
+/* ================ */
 .slide-in-left {
     animation: 2s slide-in-left;
 }
@@ -189,9 +199,9 @@ footer {
     display: block;
   }
 }
-
-/* == Debugging == 
-
+/* =============== */
+/* == Debugging == */
+/* =============== 
     * {
         border: 1px solid rgb(225, 105, 255);
     }

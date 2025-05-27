@@ -12,9 +12,9 @@
     <main>
         <section>
             <div class="container-column">
-                <h1 class="left padding-left padding-right">Sloths</h1>
-                <h2 class="left padding-left padding-right">What are sloths?</h2>
-                <div class="left padding-left padding-right">
+                <h1>Sloths</h1>
+                <h2>What are sloths?</h2>
+                <div>
                     <p>Sloths are slow-moving animals that live in the rainforests of Central and South America. They spend most of their time in trees and are known for their leisurely lifestyle. There are two main types: the two-toed sloth and the three-toed sloth, which are distinguished by the number of toes they have.</p>
                     <p>They spend about 20 hours a day sleeping or resting. Their slow pace of life is due to their slow digestion and low metabolism. Sloths are excellent climbers and spend almost their entire lives in trees, where they feel safe.</p>
                     <p>Another interesting characteristic of sloths is their unique way of moving. They hang from branches with their strong claws and move in very slow, steady motions. These slow movements help them conserve energy and avoid detection by natural predators.</p>
@@ -22,8 +22,7 @@
             </div>
             <div class="spacer"></div>
         </section>
-        <div class="spacer"></div>
-        <div class="spacer"></div>
+        <div class="spacer-big-vertical"></div>
         <section>
             <div>
                 <div class="container-profile">
@@ -43,8 +42,7 @@
                 </div>
             </div>
         </section>
-        <div class="spacer"></div>
-        <div class="spacer"></div>
+        <div class="spacer-big-vertical"></div>
         <section>
             <div class="flexbox">
                 <fieldset>
@@ -80,12 +78,12 @@
     </main>
     <footer id="footer"></footer>
         <script>
-    // Funktion zum Laden des Headers
-    fetch('header.html')                                                    // Die 'fetch' Funktion wird verwendet, um die header.html Datei zu laden.
-        .then(response => response.text())                                  // Die Antwort der 'fetch' Anfrage wird in diesem Schritt überprüft.
-                                                                            // 'response.text()' gibt den Textinhalt der Datei (header.html) zurück.
-        .then(data => {                                                     // Wenn die Datei erfolgreich geladen und der Inhalt in der 'data' Variable gespeichert wurde,
-                                                                            // wird der Inhalt in das <div> mit der ID 'header' eingefügt.
+// Function to load the header
+    fetch('header.html')                                                    // The 'fetch' function is used to load the header.html file.
+        .then(response => response.text())                                  // The response from the 'fetch' request is processed in this step.
+                                                                            // 'response.text()' returns the text content of the file (header.html).
+        .then(data => {                                                     // If the file is successfully loaded and the content is stored in the 'data' variable,
+                                                                            // the content is inserted into the <div> with the ID 'header'.
             document.getElementById('header').innerHTML = data;
         })
         .catch(error => console.error('Error loading header:', error));
