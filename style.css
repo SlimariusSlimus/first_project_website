@@ -6,18 +6,25 @@ body {
     padding-left: 5%;
     padding-right: 5%;
 }
+
 div, section, p {
     margin: 0%;
 }
+
 a {
     font-weight: bold;
     text-decoration: none;
     color: #878681;
 }
+a:hover {
+    cursor: pointer;
+}
+
 .color-secondary {
     background-color:#e6e5e4;
     color: #191a1b;
 }
+
 .mockup-hr {
   height: 2px;                   
   background-color: rgb(255, 255, 255);      
@@ -27,6 +34,14 @@ a {
   margin-right: auto;               
 }
 
+.box {
+    width: 55%;
+}
+
+.flexbox {
+    display: flex;
+    justify-content: center;
+}
 /* == Text/Headlines == */
 html {font-size: 16px;} 
 h1 {font-size: 3rem;}  
@@ -149,7 +164,7 @@ footer {
   }
 } 
 .slide-in-right {
-  animation: 2.5s slide-in-right;
+  animation: 2s slide-in-right;
 }
 @keyframes slide-in-right {
   0% {
@@ -162,7 +177,7 @@ footer {
   }
 }
 .fade-in {
-    animation: 2.5s fade-in;
+    animation: 2s fade-in;
 }
 @keyframes fade-in {
   0% {
