@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="scripts.js" defer></script>
     <title>Home</title>
 </head>
 <body>
@@ -77,20 +78,5 @@
         </section>
     </main>
     <footer id="footer"></footer>
-        <script>
-// Function to load the header
-    fetch('header.html')                                                    // The 'fetch' function is used to load the header.html file.
-        .then(response => response.text())                                  // The response from the 'fetch' request is processed in this step.
-                                                                            // 'response.text()' returns the text content of the file (header.html).
-        .then(data => {                                                     // If the file is successfully loaded and the content is stored in the 'data' variable,
-                                                                            // the content is inserted into the <div> with the ID 'header'.
-            document.getElementById('header').innerHTML = data;
-        })
-        .catch(error => console.error('Error loading header:', error));
-    fetch('footer.html')                                                
-        .then(response => response.text())                                           
-        .then(data => {document.getElementById('footer').innerHTML = data;})
-        .catch(error => console.error('Error loading footer:', error)); 
-    </script>
 </body>
 </html>
