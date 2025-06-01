@@ -11,6 +11,11 @@ body {
 div, section, p {
     margin: 0%;
 }
+ul, ol {
+  margin: 0;
+  padding-left: 1.2em;
+  list-style-position: outside;
+}
 a {
     font-weight: bold;
     text-decoration: none;
@@ -35,9 +40,10 @@ li {
 }
 .flexbox {
     display: flex;
-    justify-content: center;
 }
-
+.justify-right {justify-content: flex-end;}
+.justify-left {justify-content: flex-start;}
+.justify-center {justify-content: center;}
 /* ==================== */
 /* == Text/Headlines == */
 /* ==================== */
@@ -64,8 +70,8 @@ p  {
     margin-bottom: 5vh;
 }
 .spacer-big-vertical {
-    margin-top: 20vh;
-    margin-bottom: 20vh;
+    margin-top: 7.5vh;
+    margin-bottom: 7.5vh;
 }
 .spacer-mini-horizontal {
     margin-top: 2.5vw;
@@ -108,11 +114,9 @@ header a:hover {
 /* == Container == */
 /* =============== */
 .container-row{
-  display: flex;         
+  display: flex;
+  flex-direction: row;
   flex-wrap: wrap; 
-  flex-direction: row;     
-  justify-content: center;
-  gap: 5%;
 }
 .container-column{
   display: flex;         
@@ -167,7 +171,7 @@ header a:hover {
 }
 @keyframes slide-in-left {
   0% {
-    transform: translateX(-200%);
+    transform: translateX(-100%);
     opacity: 0; 
   }
   100% {
@@ -180,7 +184,7 @@ header a:hover {
 }
 @keyframes slide-in-right {
   0% {
-    transform: translateX(200%);
+    transform: translateX(100%);
     opacity: 0; 
   }
   100% {
@@ -194,11 +198,9 @@ header a:hover {
 @keyframes fade-in {
   0% {
     opacity: 0;
-    display: none;
   }
   100% {
-    opacity: 0;
-    display: block;
+    opacity: 1;
   }
 }
 /* =============== */
@@ -211,8 +213,11 @@ header a:hover {
     section {
         border: 5px solid rgb(106, 204, 249);
     }
+        
     div {
         border: 1px solid rgb(66, 255, 129);
-    }*/
+    }
     
-    
+    .debug {
+      }
+    */
