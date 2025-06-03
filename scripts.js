@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Checks if the confirmed password is the same as the original one
+    // Checks if the confirmed password is the same as the original one 
     const contactForm = document.querySelector('.contact-form');
     if (contactForm) { // Check if form exists
         contactForm.addEventListener('submit', function(e) {
