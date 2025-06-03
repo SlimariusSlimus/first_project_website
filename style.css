@@ -178,69 +178,9 @@ header a:hover {
 
 }
 
-/* ================ */
-/* == Animations == */
-/* ================ */
-.slide-in-left {
-    animation: 2s slide-in-left;
-}
-@keyframes slide-in-left {
-  0% {
-    transform: translateX(-100%);
-    opacity: 0; 
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1; 
-  }
-} 
-.slide-in-right {
-  animation: 2s slide-in-right;
-}
-@keyframes slide-in-right {
-  0% {
-    transform: translateX(100%);
-    opacity: 0; 
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1; 
-  }
-}
-.fade-in {
-    animation: 2s fade-in;
-}
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-/* =============== */
-/* == Debugging == */
-/* =============== 
-    * {
-        border: 1px solid rgb(225, 105, 255);
-    }
-      
-    section {
-        border: 5px solid rgb(106, 204, 249);
-    }
-         
-    div {
-        border: 1px solid rgb(66, 255, 129);
-    }
-    .debug {
-      }
-    */ 
-
-
-
-  /* =========== */
+/* =========== */
   /* == Forms == */
-  /* =============== */
+  /* =========== */
 
 .contact-form label {
     display: block;
@@ -283,3 +223,62 @@ fieldset{
   border-radius: 20%;
   padding: 2% 4%;
 }
+
+/* ================ */
+/* == Animations == */
+/* ================ */
+.slide-in-left {
+    animation: 2s slide-in-left;
+}
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0; 
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1; 
+  }
+} 
+.slide-in-right {
+  animation: 2s slide-in-right;
+}
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(100%);
+    opacity: 0; 
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1; 
+  }
+}
+.fade-in {
+    animation: 2s fade-in;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* =============== */
+/* == Debugging == */
+/* =============== 
+    * {
+        border: 1px solid rgb(225, 105, 255);
+    }
+      
+    section {
+        border: 5px solid rgb(106, 204, 249);
+    }
+         
+    div {
+        border: 1px solid rgb(66, 255, 129);
+    }
+    .debug {
+      }
+    */ 
