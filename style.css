@@ -105,14 +105,17 @@ header {
 }
 header nav {
   display: flex;
+  position: relative;
+  width: 100%;
   flex-wrap: nowrap;
   justify-content: center;
-  margin: 1%;
+  margin: 0.5% 0;
+  margin-left: 0.5%;
 }
 header a, header a:visited {
     display: inline-block; 
     margin: 0.5%;
-    font-size: 130%;
+    font-size: 1.3rem;
     color: #f5f4ef;
     opacity: 0.65;
     text-decoration: none;
@@ -123,8 +126,18 @@ header a:hover {
     transform: scale(1.15);
     opacity: 1;
 }
-
-
+header nav a:last-of-type {
+    margin-right: 1.5%;
+}
+#toggleBtn {
+    background: none;
+    border: none;
+    font-size: 130%;
+    cursor: pointer;
+    padding: 0;
+    position: absolute;
+    right: 3%;
+}
 /* =============== */
 /* == Container == */
 /* =============== */
@@ -225,6 +238,27 @@ fieldset{
 }
 
 /* ================ */
+/* == Light-mode == */
+/* ================ */
+body.light-mode {
+    background-color:#f5f4ef;
+    color:#191a1b; 
+}
+body.light-mode header a, body.light-mode header a:visited, body.light-mode a {
+    color: #191a1b;
+    opacity: 1;
+}
+body.light-mode .profile-picture-wrapper {
+  box-sizing: border-box;
+  border: 8px #191a1b solid;
+}
+body.light-mode .mockup-hr {    
+  background-color: rgb(0, 0, 0);               
+}
+body.light-mode input, body.light-mode textarea{    
+  border: 1px #191a1b solid;               
+}
+/* ================ */
 /* == Animations == */
 /* ================ */
 .slide-in-left {
@@ -280,5 +314,5 @@ fieldset{
         border: 1px solid rgb(66, 255, 129);
     }
     .debug {
-      }
-    */ 
+      }*/ 
+    
