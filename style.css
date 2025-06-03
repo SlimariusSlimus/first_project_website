@@ -164,7 +164,7 @@ header nav a:last-of-type {
   border: 10px #191a1b;
   border-radius: 20px;
   word-wrap: break-word;        /* break for long words */
-  overflow-wrap: break-word;    /* fallback for other browsers */
+  overflow-wrap: break-word;    /* fallback for other browsers  */
 }
 
 /* ============= */
