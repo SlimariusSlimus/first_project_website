@@ -43,6 +43,8 @@ li {
 }
 .flexbox {
     display: flex;
+    width: 100%;
+    justify-content: center;
 }
 .justify-right {justify-content: flex-end;}
 .justify-left {justify-content: flex-start;}
@@ -60,7 +62,7 @@ p  {
     font-size: 1rem; 
     margin-bottom: 0.5rem;
 } 
-.left {text-align: left; }
+.left {text-align: left;}
 .center { text-align: center;}
 .right {text-align: right;}
 
@@ -233,3 +235,51 @@ header a:hover {
     .debug {
       }
     */ 
+
+
+
+  /* =========== */
+  /* == Forms == */
+  /* =============== */
+
+.contact-form label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.25rem;
+    border: 1px solid #f5f4ef;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    margin: 1.5rem 1rem;
+    margin-bottom: 0rem;
+    padding: 0.75rem 2rem;
+    background: #434343;
+    color: #f5f4ef;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    background: #005fa3;
+}
+fieldset{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 60vh;
+  margin: 5%;
+  border-radius: 20%;
+  padding: 2% 4%;
+}

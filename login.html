@@ -5,25 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="scripts.js" defer></script>
-    <title>Sign In</title>
+    <title>Login</title>
 </head>
 <body>
     <header id="header"></header>
-    <div class="mockup-hr"></div>
-    <fieldset>
-        <main>
-            <form action="home.html">
-                <h2>Login</h2>
-                <label for="">Enter your email</label><br>
-                <input type="email" placeholder="eg: JohnDoe01@mail.org" required><br>
-                <label for="">Enter your password</label><br>
-                <input type="password" minlength="8" required><br>
-                <br><br>
-                <button type="submit">Login</button><br><br>
-                <button type="reset">Cancel</button>
-            </form>
-        </main>
-    </fieldset>
+    <main>
+        <div class="spacer-big-vertical"></div>
+        <section class="flexbox">
+            <div class="box">
+                <h2 class="center">Login</h2>
+                <form action="login.html" method="POST" class="contact-form">  <!--TODO connect backend auth-->
+                    <label for="username">Username</label>
+                    <input type="text" name="username" placeholder="Username" required><br>
+
+                    <label for="password">Password</label>
+                    <input type="password" name="password" placeholder="Password" minlength="8" required><br>
+
+                    <div class="flexbox">
+                        <button type="submit">Login</button>
+                        <button type="reset">Clear</button>
+                    </div>
+                </form>
+            </fieldset>
+        </section>
+    </main>
+    <div class="spacer-big-vertical"></div>
     <footer id="footer"></footer>
 </body>
 </html>
