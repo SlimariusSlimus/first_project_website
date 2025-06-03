@@ -19,14 +19,12 @@ loadComponent('header', 'header.html');
 loadComponent('footer', 'footer.html');
 
 // Clears the form when "Clear" button is pressed
-document.addEventListener("DOMContentLoaded", function () {
-    const clearButton = document.querySelector("button[type='reset']");
-    const form = document.querySelector(".contact-form");
+const clearButton = document.querySelector("button[type='reset']");
+const form = document.querySelector(".contact-form");
 
-    clearButton.addEventListener("click", function (e) {
-        e.preventDefault();
-        form.reset();
-    });
+clearButton.addEventListener("click", function (e) {
+    e.preventDefault();
+    form.reset();
 });
 
 // Checks if the confirmed password is the same as the original one
