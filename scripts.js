@@ -1,3 +1,6 @@
+document.addEventListener('DOMContentLoaded', function() {
+// waits for DOM to be loaded
+
 // Function to load a component (eg: header or footer)
 function loadComponent(elementId, filePath) {
     fetch(filePath)
@@ -35,4 +38,5 @@ document.querySelector('.contact-form').addEventListener('submit', function(e) {
     e.preventDefault();
     alert('Passwords do not match.');
   }
+});
 });
