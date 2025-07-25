@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js" defer></script>
+    <title>Login</title>
+</head>
+<body>
+    <header id="header"></header>
+    <main>
+        <div class="spacer-big-vertical"></div>
+        <section class="flexbox">
+            <div class="box">
+                <h2 class="center">Login</h2>
+                <form action="login.html" method="POST" class="contact-form">  <!--TODO connect backend auth-->
+                    <label for="username">Username</label>
+                    <input type="text" name="username" placeholder="Username" required><br>
+
+                    <label for="password">Password</label>
+                    <input type="password" name="password" placeholder="Password" minlength="8" required><br>
+
+                    <div class="flexbox">
+                        <button type="submit">Sign In</button>
+                        <button type="reset">Clear</button>
+                    </div>
+                </form>
+            </fieldset>
+        </section>
+    </main>
+    <div class="spacer-big-vertical"></div>
+    <footer id="footer"></footer>
+</body>
+</html>

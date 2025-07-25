@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js" defer></script>
+    <title>Register</title>
+</head>
+<body>
+    <header id="header"></header>
+    <div class="spacer-big-vertical"></div>
+    <main>
+        <section class="flexbox">
+            <div class="box">
+                    <h2 class="center">Register</h2>
+                    <form action="register.html" method="POST" class="contact-form"> <!--TODO connect backend registration-->
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" placeholder="Choose a username" minlength="5" required><br>
+                        
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required><br>
+                        
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Create a password" minlength="8"><br>
+                        
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" id="confirm-password" name="confirm-password" placeholder="Repeat your password" minlength="8" required><br>
+                        
+                        <div class="flexbox">
+                            <button type="submit">Sign Up</button>
+                            <button type="reset">Clear</button>
+                        </div>
+                        </form>
+                    </div>
+        </section>
+    </main>
+    <div class="spacer-big-vertical"></div>
+    <footer id="footer"></footer>
+</body>
+</html>

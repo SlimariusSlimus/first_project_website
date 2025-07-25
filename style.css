@@ -1,0 +1,321 @@
+/* ========== */
+/* == Misc == */
+/* ========== */
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color:#191a1b;
+  color: #f5f4ef;
+  font-family: 'Roboto', 'Segoe UI', sans-serif;
+}
+main {
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+div, section, p {
+    margin: 0%;
+}
+ul, ol {
+  margin: 0;
+  padding-left: 1.2em;
+  list-style-position: outside;
+}
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #878681;
+}
+a:hover {
+    cursor: pointer;
+}
+li {
+  margin: 1em 0em;
+}
+.mockup-hr {
+  height: 2px;  
+  align-self: center;                 
+  background-color: rgb(255, 255, 255);      
+  border-radius: 5px;            
+  width: 27%;         
+}
+.box {
+    width: 50%;
+}
+.flexbox {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.justify-right {justify-content: flex-end;}
+.justify-left {justify-content: flex-start;}
+.justify-center {justify-content: center;}
+/* ==================== */
+/* == Text/Headlines == */
+/* ==================== */
+html {
+  font-size: clamp(0.875rem, calc(0.5vw + 0.5vh), 1.5rem);
+}
+h1 {font-size: 3rem;}  
+h1 {font-size: 3rem;} 
+h2 {font-size: 1.5rem;}
+p  {
+    font-size: 1rem; 
+    margin-bottom: 0.5rem;
+} 
+input, textarea {
+  font-family: 'Roboto', 'Segoe UI', sans-serif;
+}
+.left {text-align: left;}
+.center { text-align: center;}
+.right {text-align: right;}
+
+/* ============= */
+/* == Spacing == */
+/* ============= */
+.spacer-mini-vertical {
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+}
+.spacer-small-vertical {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+.spacer-big-vertical {
+    margin-top: 7.5vh;
+    margin-bottom: 7.5vh;
+}
+.spacer-mini-horizontal {
+    margin-top: 2.5vw;
+    margin-bottom: 2.5vw;
+}
+.spacer-small-horizontal {
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+}
+.spacer-big-horizontal {
+    margin-top: 20vw;
+    margin-bottom: 20vw;
+}
+
+/* ============ */
+/* == Header == */
+/* ============ */
+header {
+    display: flex;         
+    align-items: center;   
+    height: 7.5vh;
+    width: auto;     
+}
+header nav {
+  display: flex;
+  position: relative;
+  width: 100%;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin: 0.5% 0;
+  margin-left: 0.5%;
+}
+header a, header a:visited {
+    display: inline-block; 
+    margin: 0.5%;
+    font-size: 1.3rem;
+    color: #f5f4ef;
+    opacity: 0.65;
+    text-decoration: none;
+}
+header a:hover {
+    transition: border-width 0.4s;
+    transition: transform 0.4s;
+    transform: scale(1.15);
+    opacity: 1;
+}
+header nav a:last-of-type {
+    margin-right: 1.5%;
+}
+#toggleBtn {
+    background: none;
+    border: none;
+    font-size: 130%;
+    cursor: pointer;
+    padding: 0;
+    position: absolute;
+    right: 3%;
+}
+/* =============== */
+/* == Container == */
+/* =============== */
+.container-row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; 
+}
+.container-column{
+  display: flex;         
+  flex-wrap: wrap; 
+  flex-direction: column;     
+  justify-content: center;
+  gap: 5%;
+}
+.container-profile{
+  display: flex;         
+  flex-wrap: wrap; 
+  flex-direction: row;     
+  justify-content: space-evenly;
+}
+.sub-container{
+  max-width: 38%;
+  border: 10px #191a1b;
+  border-radius: 20px;
+  word-wrap: break-word;        /* break for long words */
+  overflow-wrap: break-word;    /* fallback for other browsers  */
+}
+
+/* ============= */
+/* == Profile == */
+/* ============= */
+.profile h2 {
+    display: flex;
+    justify-content: center;
+}
+.profile-picture-wrapper {
+    width: 20vw;
+    max-width: 30vw;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+.profile-picture {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+/* =========== */
+  /* == Forms == */
+  /* =========== */
+
+.contact-form label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.25rem;
+    border: 1px solid #f5f4ef;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    margin: 1.5rem 1rem;
+    margin-bottom: 0rem;
+    padding: 0.75rem 2rem;
+    background: #434343;
+    color: #f5f4ef;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    background: #005fa3;
+}
+fieldset{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 60vh;
+  margin: 5%;
+  border-radius: 20%;
+  padding: 2% 4%;
+}
+
+/* ================ */
+/* == Light-mode == */
+/* ================ */
+body.light-mode {
+    background-color:#f5f4ef;
+    color:#191a1b; 
+}
+body.light-mode header a, body.light-mode header a:visited, body.light-mode a {
+    color: #191a1b;
+    opacity: 1;
+}
+body.light-mode .profile-picture-wrapper {
+  box-sizing: border-box;
+  border: 8px #191a1b solid;
+}
+body.light-mode .mockup-hr {    
+  background-color: rgb(0, 0, 0);               
+}
+body.light-mode input, body.light-mode textarea{    
+  border: 1px #191a1b solid;               
+}
+/* ================ */
+/* == Animations == */
+/* ================ */
+.slide-in-left {
+    animation: 2s slide-in-left;
+}
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0; 
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1; 
+  }
+} 
+.slide-in-right {
+  animation: 2s slide-in-right;
+}
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(100%);
+    opacity: 0; 
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1; 
+  }
+}
+.fade-in {
+    animation: 2s fade-in;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* =============== */
+/* == Debugging == */
+/* =============== 
+    * {
+        border: 1px solid rgb(225, 105, 255);
+    }
+      
+    section {
+        border: 5px solid rgb(106, 204, 249);
+    }
+         
+    div {
+        border: 1px solid rgb(66, 255, 129);
+    }
+    .debug {
+      }*/ 
+    

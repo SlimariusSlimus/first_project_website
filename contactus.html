@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js" defer></script>
+    <title>Contact</title>
+</head>
+<body>
+    <header id="header"></header>
+    <div class="spacer-big-vertical"></div>
+    <main>
+        <section class="flexbox">
+            <div class="box">
+                <h2 class="center">Contact Us</h2>
+                <form action="contactus.html" method="POST" class="contact-form">                                       <!--TODO setup mailing to me-->
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="John Doe" required><br>
+
+                    <label for="email">Your Email</label>
+                    <input type="email" name="email" placeholder="JohnDoe@example.com" required><br>
+
+                    <label for="subject">Subject</label>
+                    <input type="text" name="subject" placeholder="What do you want to talk about?"><br>
+
+                    <label for="message">Message</label>
+                    <textarea name="message" rows="8" columns="16" placeholder="Type your message..."></textarea><br>
+
+                    <div class="flexbox">
+                        <button type="submit">Send</button>
+                        <button type="reset">Clear</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <div class="spacer-big-vertical"></div>
+    <footer id="footer"></footer>
+</body>
+</html>
